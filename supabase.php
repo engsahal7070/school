@@ -1,8 +1,8 @@
 <?php
 // supabase.php
 
-$supabase_url = "https://dfhufqxviugzhyncqrxn.supabase.co";
-$supabase_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRmaHVmcXh2aXVnemh5bmNxcnhuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQyMjcyMTksImV4cCI6MjA3OTgwMzIxOX0.GSlCGgIR3I-xcOkphPXjJZORLjRUxqnuulMJ0u-5Kz8";
+$supabase_url = getenv("SUPABASE_URL");
+$supabase_key = getenv("SUPABASE_KEY");
 
 function supabase_get($table) {
     global $supabase_url, $supabase_key;
